@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f1f1f1;
+}
+.center {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.box {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  transform: perspective(500px) rotate(-90deg) skew(0deg);
+  box-shadow: -20px 28px 10px rgba(0, 0, 0, .3);
+  background: #fff url('marta.png');
+  background-size: 260px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  transition-duration: .7s;
+}
+.box:hover {
+  transform: perspective(500px) rotate(630deg) skew(0deg) translate(0px, 0px);
+
+  transition-duration: .7s;
+  }
+.box:before {
+  content: '';
+  width: 20px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: skewY(-40deg) translate(-20px, -8px);
+  background: #e8e7ec;
+  /* background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; */
+}
+.box:after {
+  content: '';
+  width: 300px;
+  height: 17px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: skewX(-50deg) translate(10px, 17px);
+  background: #e8e7ec;
+  /* background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; */
+}
