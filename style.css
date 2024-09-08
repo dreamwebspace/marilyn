@@ -16,7 +16,7 @@ body {
   height: 200px;
   transform: perspective(500px) rotate(-90deg) skew(0deg);
   box-shadow: -20px 28px 10px rgba(0, 0, 0, .3);
-  background: #fff url('marta.png');
+  background: #fff url('marilyn.png');
   background-size: 260px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
